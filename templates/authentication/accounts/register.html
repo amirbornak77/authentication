@@ -1,0 +1,21 @@
+{% load statics %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Page</title>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<form id="registerForm">
+  <input type="text" id="firstName" placeholder="First Name" required>
+  <input type="text" id="lastName" placeholder="Last Name" required>
+  <input type="tel" id="phone" placeholder="Phone Number" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <button type="submit">Register</button>
+</form>
+
+<script src="{% static 'main.js' %}"></script>
+</body>
+</html>
