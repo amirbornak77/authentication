@@ -1,12 +1,12 @@
 from django import forms
-from .models import CustomUser
+from .models import User
 
 class CustomUserCreationForm(forms.ModelForm):
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Password confirmation', widget=forms.PasswordInput)
 
     class Meta:
-        model = CustomUser
+        model = User
         fields = ('email', 'name')
 
     def clean_password2(self):
